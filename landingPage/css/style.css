@@ -1,0 +1,125 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Ajustes gerais */
+.bg-primary {
+    background-color: #34495E !important;
+}
+
+.bg-secondary {
+    background-color: #47535e !important;
+}
+
+/* Espaçamento e bordas */
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+/* Imagens */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilização da logo */
+.logo {
+    width: 200px; /* Aumenta o tamanho da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Padronizar tamanho das caixas */
+.box-standard {
+    min-height: 250px; /* Altura mínima */
+    width: 100%; /* Garantir que a caixa ocupe toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima da caixa, se necessário */
+    margin: 0 auto; /* Centraliza a caixa, caso tenha uma largura fixa */
+}
+
+/* Ajustar contato para exibição em coluna */
+#contato .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+}
+
+.color-white{
+    color: whitesmoke;
+}
+
+.bg-img {
+    position: relative;
+    background-image: url('../imagens/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #47535e;
+    opacity: 0.4; /* Ajustado para mais transparência */
+    z-index: 1;
+}
+
+.bg-img > * {
+    position: relative;
+    z-index: 2;
+}
+
+.py-7{
+    padding: 7rem;
+}
+
+.color-grey{
+    color: #2f2e2e;
+}
+.bg-img1 {
+    position: relative;
+    background-image: url('../imagens/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #47535e;
+    opacity: 0.4; /* Ajustado para mais transparência */
+    z-index: 1;
+}
+
+.bg-img1 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.py-7{
+    padding: 7rem;
+}
+
+.color-grey{
+    color: #2f2e2e;
+}
