@@ -50,6 +50,8 @@ a:hover {
     display: flex;
     flex-wrap: nowrap; /* Impede a quebra de linha */
     justify-content: center;
+    overflow-x: auto; /* Permite rolagem horizontal caso necessário */
+    white-space: nowrap; /* Impede a quebra de linha nos itens */
 }
 
 .nav-item {
@@ -59,11 +61,11 @@ a:hover {
 /* Garante que o menu de navegação fique correto em telas menores */
 @media (max-width: 768px) {
     .nav {
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* Impede a quebra de linha */
+        overflow-x: auto; /* Permite rolagem horizontal */
     }
     .nav-item {
-        flex: 1; /* Distribui os itens igualmente */
-        text-align: center;
+        flex: none; /* Garante que os itens não encolham */
     }
 }
 
